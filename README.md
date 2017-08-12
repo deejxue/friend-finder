@@ -6,7 +6,7 @@ Looking for a friend to go the movies with?  Can't stand eating popcorn alone?? 
 
 WELL SHOOT PARTNER, YOU COME TO RIGHT PLACE!!! :)  
 
-                                      WAZOO IS FOR YOU!!!!!!
+                                     # WAZOO IS FOR YOU!!!!!!
                                       
                                       
 Take our survey and get matched up to someone who has your same interests and goals.  
@@ -17,6 +17,6 @@ Who will you match up with?  A famous character from back in the day?  A beautif
 
 Find out today and take the survey!!
 
-                                        FIND THAT MAGICAL FRIEND TODAY....
+                                      ##  FIND THAT MAGICAL FRIEND TODAY....
                                               
-                                                WITH WAZOO!!!!!!!!!!!!!!!!!!!!!!!
+                                             #   WITH WAZOO!!!!!!!!!!!!!!!!!!!!!!!
