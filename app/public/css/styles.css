@@ -1,0 +1,73 @@
+body {
+  /* Visual affect */
+  background-image: url("../img/pingpong.gif");
+  background-size: 100% 100%;
+}
+
+.jumbotron {
+  /* Positioning */
+  margin-left:10%;
+  width:80%;
+  /* Round the corners on the div*/
+  border-radius:25px;
+  /* Visual affect */
+  background-color:#b3b3ff;
+  opacity:0.8;
+}
+
+#main-header {
+  /* Text effects and centering */
+  color:red;
+  font-size:60px;
+  text-align:center;
+  text-shadow:0 0 3px #660033,0 0 5px#000066;
+  min-height: 100%;
+}
+
+h1, .fa-optin-monster {
+  color:red;
+}
+
+h2, #header-center {
+  /* Text effects */
+  color:black;
+  text-align: center;
+}
+
+#hp-header {
+  font-size:30px;
+  color:red;
+}
+
+  /*Survey page CSS*/
+.container-survey {
+  width: 80%;
+  margin-left: 10%;
+  background-color:#ecb3ff;
+  border-radius:25px;
+  opacity: 0.9;
+}
+
+#survey-body {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#answer-header {
+  text-align:center;
+  color:red;
+  font-size:32px;
+  text-shadow:0 0 3px #FF0000,0 0 5px#0000FF;"
+}
+
+#form-survey {
+  padding-left:5rem;
+}
+
+#button-takeSurvey {
+  color:black;
+}
+
+#submit-survey {
+  color:black;
+}/* --------NAV END---------- */

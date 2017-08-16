@@ -4,159 +4,170 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
     <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport">
-    
+
 	<title>Wazoo Friend Matcher</title>
 
 	<!-- Latest compiled and minified CSS & JS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- _____________________________________________________________________
+    Script links below here -->
+
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-	<!-- Font Awesome Glyphicons -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
 	<!-- Chosen jQuery script link -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 </head>
 <body>
     <!-- Start survey container -->
-	<div class="container" style="background-color:#ecb3ff">
+	<div class="container-survey">
         <!-- Start survey questions -->
-		<h2 style="text-align:center;color:red;font-size:32px;text-shadow:0 0 3px #FF0000,0 0 5px#0000FF;">Please answer the following questions.</h2> 
-        <h3 style="text-align:center">Don't forget to fill out the required name and photo information.</h3>
+		<h2 id="answer-header">Please answer the following questions.</h2> 
+        <h3 id="header-center">Don't forget to fill out the required name and photo information.</h3>
 		<hr>
 
-		<h3><strong>About You</strong></h3>
-		<h4>Your Name (Required)</h4>
-		<input type="text" name="" id="name" class="form-control" required >
+		<h3 id="header-center"><strong>About You</strong></h3>
+        <div class="row" id="survey-body">
+    		<h4>Your Name (Required)</h4>
+    		<input type="text" name="" id="name" class="form-control" required >
 
-		<h4>Your Photo Image (Link Required)</h4>
-		<input type="text" name="" id="photo" class="form-control" required >
+    		<h4>Your Photo Image (Link Required)</h4>
+    		<input type="text" name="" id="photo" class="form-control" required >
 
-		<hr>
-        <form style="padding-left: 200px">
-		<h3><strong>Question 1</strong></h3>
-		<h4>You like exploring the outdoors.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q1">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select>
+    		<hr>
+            <form id="form-survey">
+    		<h3><strong>Question 1</strong></h3>
+    		<h4>You like exploring the outdoors.</h4>
+    	 	<select data-placeholder="" class="chosen-select" id="q1">
+    	 		<option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+          	</select>
 
-		<h3><strong>Question 2</strong></h3>
-		<h4>You like big groups.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q2">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select>
-
-
-		<h3><strong>Question 3</strong></h3>
-		<h4>You like unusual foods like sushi and curry.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q3">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select>
+    		<h3><strong>Question 2</strong></h3>
+    		<h4>You like big groups.</h4>
+    	 	<select data-placeholder="" class="chosen-select" id="q2">
+    	 		<option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+          	</select>
 
 
-		<h3><strong>Question 4</strong></h3>
-		<h4>Your life could be summed up by the phrase "I'm gonna dance my life away."</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q4">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select>
+    		<h3><strong>Question 3</strong></h3>
+    		<h4>You like unusual foods like sushi and curry.</h4>
+    	 	<select data-placeholder="" class="chosen-select" id="q3">
+    	 		<option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+          	</select>
 
 
-		<h3><strong>Question 5</strong></h3>
-		<h4>You value others' opinions.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q5">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select>
+    		<h3><strong>Question 4</strong></h3>
+    		<h4>Your life could be summed up by the phrase "I'm gonna dance my life away."</h4>
+    	 	<select data-placeholder="" class="chosen-select" id="q4">
+    	 		<option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+          	</select>
 
 
-		<h3><strong>Question 6</strong></h3>
-		<h4>You like to strike out on your own and leave behind the crowds.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q6">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select>
+    		<h3><strong>Question 5</strong></h3>
+    		<h4>You value others' opinions.</h4>
+    	 	<select data-placeholder="" class="chosen-select" id="q5">
+    	 		<option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+          	</select>
 
 
-		<h3><strong>Question 7</strong></h3>
-		<h4>Chivalry is not dead for you.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q7">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select>
+    		<h3><strong>Question 6</strong></h3>
+    		<h4>You like to strike out on your own and leave behind the crowds.</h4>
+    	 	<select data-placeholder="" class="chosen-select" id="q6">
+    	 		<option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+          	</select>
 
-		<h3><strong>Question 8</strong></h3>
-		<h4>You'd prefer to sail to a vacation destination rather than fly.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q8">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select>
 
-		<h3><strong>Question 9</strong></h3>
-		<h4>You like being the center of attention.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q9">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select>
+    		<h3><strong>Question 7</strong></h3>
+    		<h4>Chivalry is not dead for you.</h4>
+    	 	<select data-placeholder="" class="chosen-select" id="q7">
+    	 		<option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+          	</select>
 
-		<h3><strong>Question 10</strong></h3>
-		<h4>Art museums hold a special place in your heart.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q10">
-	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select>
-        </form>
+    		<h3><strong>Question 8</strong></h3>
+    		<h4>You'd prefer to sail to a vacation destination rather than fly.</h4>
+    	 	<select data-placeholder="" class="chosen-select" id="q8">
+    	 		<option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+          	</select>
+
+    		<h3><strong>Question 9</strong></h3>
+    		<h4>You like being the center of attention.</h4>
+    	 	<select data-placeholder="" class="chosen-select" id="q9">
+    	 		<option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+          	</select>
+
+    		<h3><strong>Question 10</strong></h3>
+    		<h4>Art museums hold a special place in your heart.</h4>
+    	 	<select data-placeholder="" class="chosen-select" id="q10">
+    	 		<option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+          	</select>
+            </form>
+        </div>
 		<br>
 		<br>
 
 		<!-- Submit Button -->
-		<button type="button" class="btn btn-primary btn-lg center-block" data-target="#resultsModal" id="submit" style="color:black"><i class="fa fa-bolt" aria-hidden="true"></i>
+		<button type="button" class="btn btn-primary btn-lg center-block" data-target="#resultsModal" id="submit-survey"><i class="fa fa-bolt" aria-hidden="true"></i>
  Connect to your true friend...</button>
 
 		<hr>
