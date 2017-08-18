@@ -40,7 +40,7 @@ h2, #header-center {
 }
 
   /*Survey page CSS*/
-.container-survey {
+#container-survey {
   width: 80%;
   margin-left: 10%;
   background-color:#ecb3ff;
@@ -68,6 +68,13 @@ h2, #header-center {
   color:black;
 }
 
-#submit-survey {
+#submit {
   color:black;
-}/* --------NAV END---------- */
+}
+
+/* --------MODAL---------- */
+#matchImg {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+}
